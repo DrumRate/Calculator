@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button button1, button2, button3, button4, button5, button6, button7, button8, button9, button0,
             buttonPlus, buttonMinus, buttonMultiply, buttonDivide, buttonSqrt, buttonOP, buttonCP,
-            buttonClear, buttonDot, buttonEqual, buttonBS;
+            buttonClear, buttonDot, buttonEqual, buttonBS,  buttonSin, buttonCos, buttonSqr;
     TextView tvResult;
 
     @Override
@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
         buttonDot = (Button) findViewById(R.id.buttonDot);
         buttonEqual = (Button) findViewById(R.id.buttonEqual);
         buttonBS = (Button) findViewById(R.id.buttonBS);
+        buttonSqr = (Button) findViewById(R.id.buttonSqr);
+        buttonCos = (Button) findViewById(R.id.buttonCos);
+        buttonSin = (Button) findViewById(R.id.buttonSin);
         tvResult = (AutoCompleteTextView) findViewById(R.id.result);
     }
     void setComponentListeners(){
@@ -158,7 +161,25 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener oclButtonSqrt = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //todo sqrtER
+                tvResult.setText(tvResult.getText() + "√");
+            }
+        };
+        View.OnClickListener oclButtonSqr = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResult.setText(tvResult.getText() + "^2");
+            }
+        };
+        View.OnClickListener oclButtonSin = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResult.setText(tvResult.getText() + "sin(");
+            }
+        };
+        View.OnClickListener oclButtonCos = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tvResult.setText(tvResult.getText() + "cos(");
             }
         };
         View.OnClickListener oclButtonBS = new View.OnClickListener() {
@@ -195,6 +216,9 @@ public class MainActivity extends AppCompatActivity {
         buttonClear.setOnClickListener(oclButtonClear);
         buttonEqual.setOnClickListener(oclButtonEqual);
         buttonBS. setOnClickListener(oclButtonBS);
+        buttonSin. setOnClickListener(oclButtonSin);
+        buttonCos. setOnClickListener(oclButtonCos);
+        buttonSqr. setOnClickListener(oclButtonSqr);
     }
 
 }
