@@ -203,7 +203,7 @@ public class MainActivity extends AppCompatActivity {
                     tvResult.setText(mathParser.Parse(tvResult.getText().toString()) + "");
                 } catch (Exception e){
                     tvResult.setText("");
-                    tvResult.setHint("Invalid operators or result can not be calculated");
+                    tvResult.setHint(R.string.error_parsing);
                 }
             }
         };

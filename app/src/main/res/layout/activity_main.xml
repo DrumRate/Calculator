@@ -8,24 +8,26 @@
 
     <AutoCompleteTextView
         android:id="@+id/result"
-        android:layout_width="369dp"
-        android:layout_height="134dp"
+        android:layout_width="365dp"
+        android:layout_height="121dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
 
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:editable="false"
-        android:hint="0"
+        android:hint="@string/number0"
         android:maxLines="2"
         android:textAlignment="textEnd"
+        android:textIsSelectable="false"
         app:layout_constraintBottom_toTopOf="@+id/buttonGroup"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481" />
 
     <TableLayout
         android:id="@+id/buttonGroup"
@@ -50,19 +52,25 @@
                 android:id="@+id/buttonSin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sin" />
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/functionSin" />
 
             <Button
                 android:id="@+id/buttonCos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cos" />
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/functionCos" />
 
             <Button
                 android:id="@+id/buttonSqr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="X^2" />
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/functionSqr" />
 
             <Button
                 android:id="@+id/buttonBS"
@@ -70,7 +78,9 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentEnd="true"
-                android:text="Del"
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/functionDel"
                 app:layout_constraintBottom_toTopOf="@+id/buttonGroup"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/result"
@@ -84,27 +94,36 @@
 
             <Button
                 android:id="@+id/buttonSqrt"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="√" />
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/functionSqrt" />
 
             <Button
                 android:id="@+id/buttonOP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="(" />
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/functionOP" />
 
             <Button
                 android:id="@+id/buttonCP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=")" />
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/functionCP" />
 
             <Button
                 android:id="@+id/buttonClear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="C" />
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/functionClr" />
         </TableRow>
 
         <TableRow
@@ -113,34 +132,42 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/button7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1"
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/number7"
                 tools:layout_editor_absoluteX="45dp"
-                tools:layout_editor_absoluteY="88dp" />
+                tools:layout_editor_absoluteY="220dp" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/button8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2"
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/number8"
                 tools:layout_editor_absoluteX="147dp"
-                tools:layout_editor_absoluteY="88dp" />
+                tools:layout_editor_absoluteY="220dp" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/button9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3"
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/number9"
                 tools:layout_editor_absoluteX="256dp"
-                tools:layout_editor_absoluteY="88dp" />
+                tools:layout_editor_absoluteY="220dp" />
 
             <Button
                 android:id="@+id/buttonMultiply"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="*" />
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/functionMul" />
 
         </TableRow>
 
@@ -153,7 +180,9 @@
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4"
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/number4"
                 tools:layout_editor_absoluteX="45dp"
                 tools:layout_editor_absoluteY="156dp" />
 
@@ -161,7 +190,9 @@
                 android:id="@+id/button5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5"
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/number5"
                 tools:layout_editor_absoluteX="147dp"
                 tools:layout_editor_absoluteY="156dp" />
 
@@ -169,7 +200,9 @@
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="6"
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/number6"
                 tools:layout_editor_absoluteX="256dp"
                 tools:layout_editor_absoluteY="156dp" />
 
@@ -177,7 +210,9 @@
                 android:id="@+id/buttonDivide"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="/" />
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/functionDiv" />
 
         </TableRow>
 
@@ -187,34 +222,42 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/button1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="7"
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/number1"
                 tools:layout_editor_absoluteX="45dp"
-                tools:layout_editor_absoluteY="220dp" />
+                tools:layout_editor_absoluteY="88dp" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="8"
-                tools:layout_editor_absoluteX="147dp"
-                tools:layout_editor_absoluteY="220dp" />
-
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="9"
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/number3"
                 tools:layout_editor_absoluteX="256dp"
-                tools:layout_editor_absoluteY="220dp" />
+                tools:layout_editor_absoluteY="88dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/number2"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="88dp" />
 
             <Button
                 android:id="@+id/buttonMinus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-" />
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/functionMin" />
 
         </TableRow>
 
@@ -227,25 +270,33 @@
                 android:id="@+id/button0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0" />
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/number0" />
 
             <Button
                 android:id="@+id/buttonDot"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="." />
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/functionDot" />
 
             <Button
                 android:id="@+id/buttonEqual"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="#53DF00"
                 android:text="=" />
 
             <Button
                 android:id="@+id/buttonPlus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+" />
+                android:layout_margin="1dp"
+                android:background="#53DF00"
+                android:text="@string/functionPlus" />
         </TableRow>
 
     </TableLayout>
