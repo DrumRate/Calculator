@@ -138,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 tvResult.setText("");
+                tvResult.setHint("0");
             }
         };
         View.OnClickListener oclButtonDot = new View.OnClickListener() {
