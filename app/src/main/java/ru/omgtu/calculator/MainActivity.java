@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener oclButtonSqrt = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //todo sqrtER
+                tvResult.setText(tvResult.getText()+ "√");
             }
         };
         View.OnClickListener oclButtonBS = new View.OnClickListener() {

@@ -12,12 +12,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="7dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:text="Del"
-        app:layout_constraintBottom_toTopOf="@+id/buttonGroup"
-        tools:layout_editor_absoluteX="280dp" />
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="204dp" />
 
     <TableLayout
         android:id="@+id/buttonGroup"
