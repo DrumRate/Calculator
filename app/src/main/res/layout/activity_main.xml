@@ -20,10 +20,13 @@
         android:backgroundTint="@color/colorResult"
         android:backgroundTintMode="screen"
         android:editable="false"
+        android:gravity="bottom"
         android:hint="@string/number0"
+        android:lineSpacingExtra="8sp"
         android:maxLines="2"
         android:textAlignment="textEnd"
         android:textIsSelectable="false"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonGroup"
         app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -56,7 +59,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
-                android:text="@string/functionSin" />
+                android:text="@string/functionSin"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/buttonCos"
@@ -64,7 +68,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
-                android:text="@string/functionCos" />
+                android:text="@string/functionCos"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/buttonSqr"
@@ -72,7 +77,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
-                android:text="@string/functionSqr" />
+                android:text="@string/functionSqr"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/buttonBS"
@@ -81,6 +87,7 @@
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
                 android:text="@string/functionDel"
+                android:textSize="24sp"
                 app:layout_constraintBottom_toTopOf="@+id/buttonGroup"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/result"
@@ -99,7 +106,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
-                android:text="@string/functionSqrt" />
+                android:text="@string/functionSqrt"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/buttonOP"
@@ -107,7 +115,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
-                android:text="@string/functionOP" />
+                android:text="@string/functionOP"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/buttonCP"
@@ -115,7 +124,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
-                android:text="@string/functionCP" />
+                android:text="@string/functionCP"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/buttonClear"
@@ -123,7 +133,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
-                android:text="@string/functionClr" />
+                android:text="@string/functionClr"
+                android:textSize="24sp" />
         </TableRow>
 
         <TableRow
@@ -138,6 +149,7 @@
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
                 android:text="@string/number7"
+                android:textSize="24sp"
                 tools:layout_editor_absoluteX="45dp"
                 tools:layout_editor_absoluteY="220dp" />
 
@@ -148,6 +160,7 @@
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
                 android:text="@string/number8"
+                android:textSize="24sp"
                 tools:layout_editor_absoluteX="147dp"
                 tools:layout_editor_absoluteY="220dp" />
 
@@ -158,6 +171,7 @@
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
                 android:text="@string/number9"
+                android:textSize="24sp"
                 tools:layout_editor_absoluteX="256dp"
                 tools:layout_editor_absoluteY="220dp" />
 
@@ -167,7 +181,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
-                android:text="@string/functionMul" />
+                android:text="@string/functionMul"
+                android:textSize="24sp" />
 
         </TableRow>
 
@@ -183,6 +198,7 @@
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
                 android:text="@string/number4"
+                android:textSize="24sp"
                 tools:layout_editor_absoluteX="45dp"
                 tools:layout_editor_absoluteY="156dp" />
 
@@ -193,6 +209,7 @@
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
                 android:text="@string/number5"
+                android:textSize="24sp"
                 tools:layout_editor_absoluteX="147dp"
                 tools:layout_editor_absoluteY="156dp" />
 
@@ -203,6 +220,7 @@
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
                 android:text="@string/number6"
+                android:textSize="24sp"
                 tools:layout_editor_absoluteX="256dp"
                 tools:layout_editor_absoluteY="156dp" />
 
@@ -212,7 +230,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
-                android:text="@string/functionDiv" />
+                android:text="@string/functionDiv"
+                android:textSize="24sp" />
 
         </TableRow>
 
@@ -228,6 +247,7 @@
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
                 android:text="@string/number1"
+                android:textSize="24sp"
                 tools:layout_editor_absoluteX="45dp"
                 tools:layout_editor_absoluteY="88dp" />
 
@@ -238,6 +258,7 @@
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
                 android:text="@string/number2"
+                android:textSize="24sp"
                 tools:layout_editor_absoluteX="147dp"
                 tools:layout_editor_absoluteY="88dp" />
 
@@ -248,6 +269,7 @@
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
                 android:text="@string/number3"
+                android:textSize="24sp"
                 tools:layout_editor_absoluteX="256dp"
                 tools:layout_editor_absoluteY="88dp" />
 
@@ -257,7 +279,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
-                android:text="@string/functionMin" />
+                android:text="@string/functionMin"
+                android:textSize="24sp" />
 
         </TableRow>
 
@@ -272,7 +295,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
-                android:text="@string/number0" />
+                android:text="@string/number0"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/buttonDot"
@@ -280,7 +304,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
-                android:text="@string/functionDot" />
+                android:text="@string/functionDot"
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/buttonEqual"
@@ -288,7 +313,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
-                android:text="=" />
+                android:text="="
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/buttonPlus"
@@ -296,7 +322,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:background="@color/colorButton"
-                android:text="@string/functionPlus" />
+                android:text="@string/functionPlus"
+                android:textSize="24sp" />
         </TableRow>
 
     </TableLayout>
