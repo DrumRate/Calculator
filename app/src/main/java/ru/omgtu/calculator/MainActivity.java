@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener oclButtonClear = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tvResult.setText("0");
+                tvResult.setText("");
             }
         };
         View.OnClickListener oclButtonDot = new View.OnClickListener() {
@@ -161,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener oclButtonSqrt = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                tvResult.setText(tvResult.getText() + "√");
+                tvResult.setText(tvResult.getText() + "sqrt(");
             }
         };
         View.OnClickListener oclButtonSqr = new View.OnClickListener() {
@@ -185,13 +185,25 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener oclButtonBS = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //todo backspacER
+                try {
+                    StringBuffer stringBuffer = new StringBuffer(tvResult.getText().toString());
+                    stringBuffer.delete(stringBuffer.length()-1, stringBuffer.length());
+                    tvResult.setText(stringBuffer);
+                } catch (Exception e) {
+
+                }
             }
         };
         View.OnClickListener oclButtonEqual = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //todo parser
+                MathParser mathParser = new MathParser();
+                try {
+                    tvResult.setText(mathParser.Parse(tvResult.getText().toString()) + "");
+                } catch (Exception e){
+                    tvResult.setText("");
+                    tvResult.setHint("Invalid operators or result can not be calculated");
+                }
             }
         };
 
