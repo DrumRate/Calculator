@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     Button buttonClear;
     Button buttonDot;
     Button buttonEqual;
-    Button butonBS;
+    Button buttonBS;
     TextView tvResult;
 
     @Override
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         buttonClear = (Button) findViewById(R.id.buttonClear);
         buttonDot = (Button) findViewById(R.id.buttonDot);
         buttonEqual = (Button) findViewById(R.id.buttonEqual);
-        butonBS = (Button) findViewById(R.id.buttonBS);
+        buttonBS = (Button) findViewById(R.id.buttonBS);
         tvResult = (AutoCompleteTextView) findViewById(R.id.result);
 
         View.OnClickListener oclButton0 = new View.OnClickListener() {
@@ -206,7 +206,7 @@ public class MainActivity extends AppCompatActivity {
         buttonCP.setOnClickListener(oclButtonCP);
         buttonClear.setOnClickListener(oclButtonClear);
         buttonEqual.setOnClickListener(oclButtonEqual);
-        butonBS. setOnClickListener(oclButtonBS);
+        buttonBS. setOnClickListener(oclButtonBS);
 
 
     }
