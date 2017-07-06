@@ -25,6 +25,10 @@
     <string name="functionDot" translatable="false">.</string>
     <string name="functionEqual" translatable="false">=</string>
     <string name="functionSqrt" translatable="false">√</string>
-    <string name="goBack">Go Home</string>
     <string name="goForward">Go to \"Login\"</string>
+    <string name="buttonOk" translatable="false">OK</string>
+    <string name="buttonGoBack">Go Home</string>
+    <string name="hintLogin">login</string>
+    <string name="hintPassword">password</string>
+    <string name="textLoginHintHelp">Tap \"OK\" to watch a login + password field content</string>
 </resources>

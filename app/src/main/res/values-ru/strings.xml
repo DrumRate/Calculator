@@ -2,6 +2,9 @@
 <resources>
     <string name="app_name">Калькулятор</string>
     <string name="error_parsing">Неправильное использование операторов или результат не может быть получен</string>
-    <string name="goBack">Назад</string>
     <string name="goForward">Переключиться на \"Login\"</string>
+    <string name="buttonGoBack">Назад</string>
+    <string name="hintLogin">логин</string>
+    <string name="hintPassword">пароль</string>
+    <string name="textLoginHintHelp">Нажмите \"OK\", чтобы посмотреть содержимое полей</string>
 </resources>
