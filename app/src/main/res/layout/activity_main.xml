@@ -12,8 +12,8 @@
         android:layout_height="121dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
 
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -327,6 +327,15 @@
         </TableRow>
 
     </TableLayout>
+
+    <Button
+        android:id="@+id/buttonIntent"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButton"
+        android:text="@string/goForward"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp" />
 
 
 </android.support.constraint.ConstraintLayout>

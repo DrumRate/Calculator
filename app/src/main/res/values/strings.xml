@@ -25,4 +25,6 @@
     <string name="functionDot" translatable="false">.</string>
     <string name="functionEqual" translatable="false">=</string>
     <string name="functionSqrt" translatable="false">√</string>
+    <string name="goBack">Go Home</string>
+    <string name="goForward">Go to \"Login\"</string>
 </resources>

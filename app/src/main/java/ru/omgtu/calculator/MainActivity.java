@@ -1,5 +1,6 @@
 package ru.omgtu.calculator;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,8 +12,9 @@ public class MainActivity extends AppCompatActivity {
 
     Button button1, button2, button3, button4, button5, button6, button7, button8, button9, button0,
             buttonPlus, buttonMinus, buttonMultiply, buttonDivide, buttonSqrt, buttonOP, buttonCP,
-            buttonClear, buttonDot, buttonEqual, buttonBS,  buttonSin, buttonCos, buttonSqr;
+            buttonClear, buttonDot, buttonEqual, buttonBS,  buttonSin, buttonCos, buttonSqr, buttonIntent;
     TextView tvResult;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         findComponentViewsById();
         setComponentListeners();
+        intent = new Intent(MainActivity.this, Login.class);
     }
 
     void findComponentViewsById(){
@@ -47,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         buttonSqr = (Button) findViewById(R.id.buttonSqr);
         buttonCos = (Button) findViewById(R.id.buttonCos);
         buttonSin = (Button) findViewById(R.id.buttonSin);
+        buttonIntent = (Button) findViewById(R.id.buttonIntent);
         tvResult = (AutoCompleteTextView) findViewById(R.id.result);
     }
     void setComponentListeners(){
@@ -207,6 +211,12 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         };
+        View.OnClickListener oclButtonIntent = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(intent);
+            }
+        };
 
         button0.setOnClickListener(oclButton0);
         button1.setOnClickListener(oclButton1);
@@ -232,6 +242,7 @@ public class MainActivity extends AppCompatActivity {
         buttonSin. setOnClickListener(oclButtonSin);
         buttonCos. setOnClickListener(oclButtonCos);
         buttonSqr. setOnClickListener(oclButtonSqr);
+        buttonIntent.setOnClickListener(oclButtonIntent);
     }
 
 }
